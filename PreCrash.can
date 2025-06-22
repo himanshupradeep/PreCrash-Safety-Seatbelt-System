@@ -1,0 +1,85 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message Engine_Message em;
+  message Acceleration_Message acc;
+  message Seatbelt_Message sbm;
+  message Brake_Message brake;
+  message PreCrash_Message crash;
+  message Gear_Message gear;
+}
+
+on start
+{
+  write("Measurement started and Gear is in Nuetral");
+  gear.Gear_Signal=0;
+  output(gear);
+  if (@Env_Seatbelt==0)
+  {
+    write("Please wear your seatbelt");
+  }
+}
+
+
+on envVar Env_Engine
+  {
+    if (@Env_Engine==1)
+    {
+      em.Engine_Signal=@Env_Engine;
+      output(em);
+      write("Engine is ON");
+    }
+    else
+    {
+      em.Engine_Signal=@Env_Engine;
+      output(em);
+      write("Engine is OFF");
+    }
+  }
+  
+on envVar Env_Acc
+  {
+    if (@Env_Engine==1)
+    {
+      acc.Acceleration_Signal=@Env_Acc;
+      output(acc);
+      write("Speed Status: Accelerator Signal Updated: Current Value: %d",@Env_Acc);
+    }
+  }
+  
+on envVar Env_Seatbelt
+  {
+    if(@Env_Seatbelt==1)
+    {
+    sbm.Seatbelt_Status = getValue(this); //@Env_Seatbelt (Current Event)
+    output(sbm);
+      write("Seatbelt buckled");
+    }
+  }
+  
+on envVar Env_Brake
+  {
+    if((@Env_Engine==1) && (@Env_Seatbelt==1) && (@Env_Brake==1))
+    {
+      crash.Seatbelt_Lock=1;
+      output(crash);
+      write("PreCrash Seatbelt Tensioning activated");
+    }
+    else
+    {
+      crash.Seatbelt_Lock=0;
+      output(crash);
+      
+    }
+  }
+  
+on envVar Env_Gear
+  {
+    gear.Gear_Signal=@Env_Gear;
+    output(gear);
+  }

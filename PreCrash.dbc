@@ -1,0 +1,79 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Seatbelt BCM
+VAL_TABLE_ Seatbelt 1 "Seatbelt buckled" 0 "Seatbelt not buckled" ;
+VAL_TABLE_ Brake 1 "Brake applied" 0 "Brake not applied" ;
+VAL_TABLE_ Engine 1 "Engine is ON" 0 "Engine is OFF" ;
+
+
+BO_ 261 Gear_Message: 8 BCM
+ SG_ Gear_Signal : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 260 Brake_Message: 1 BCM
+ SG_ Brake_Signal : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 259 PreCrash_Message: 1 Seatbelt
+ SG_ Seatbelt_Lock : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 258 Seatbelt_Message: 1 Seatbelt
+ SG_ Seatbelt_Status : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 257 Acceleration_Message: 1 BCM
+ SG_ Acceleration_Signal : 0|8@1+ (1,0) [0|180] "" Vector__XXX
+
+BO_ 256 Engine_Message: 1 BCM
+ SG_ Engine_Signal : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+
+
+EV_ Env_Gear: 0 [0|1] "" 0 1 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Env_Lock: 0 [0|1] "" 0 2 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Env_Seatbelt: 0 [0|1] "" 0 3 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Env_Brake: 0 [0|1] "" 0 4 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Env_Acc: 0 [0|384] "" 0 5 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+EV_ Env_Engine: 0 [0|1] "" 0 6 DUMMY_NODE_VECTOR0 Vector__XXX;
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+VAL_ Env_Seatbelt 1 "Seatbelt buckled" 0 "Seatbelt not buckled" ;
+VAL_ Env_Brake 1 "Brake applied" 0 "Brake not applied" ;
+VAL_ Env_Engine 1 "Engine is ON" 0 "Engine is OFF" ;
+

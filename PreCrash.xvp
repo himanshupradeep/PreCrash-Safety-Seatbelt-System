@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="PreCrash">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl7</Property>
+      <Property Name="Size">62, 14</Property>
+      <Property Name="Location">688, 184</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.142858pt, style=Bold, Italic</Property>
+      <Property Name="Text">GearBox</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl3" Children="Controls" ControlName=" ">
+      <Property Name="Name">TrackBarControl3</Property>
+      <Property Name="Size">57, 105</Property>
+      <Property Name="Location">704, 69</Property>
+      <Property Name="Maximum">1</Property>
+      <Property Name="DisplayMinMax">True</Property>
+      <Property Name="Orientation">Vertical</Property>
+      <Property Name="LargeChange">1</Property>
+      <Property Name="LargeChangeDouble">1</Property>
+      <Property Name="MaximumDouble">1</Property>
+      <Property Name="DisplayValue">True</Property>
+      <Property Name="SymbolConfiguration">5;1;PreCrash;;;Env_Gear;1;;;-1;;;</Property>
+      <Property Name="TabIndex">18</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl6" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl6</Property>
+      <Property Name="Size">66, 14</Property>
+      <Property Name="Location">558, 264</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.142858pt, style=Bold, Italic</Property>
+      <Property Name="Text">PreCrash Status</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl2" ControlName="LED Control 2">
+      <Property Name="Name">LEDControl2</Property>
+      <Property Name="Size">24, 24</Property>
+      <Property Name="Location">575, 231</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;2;PreCrash;Seatbelt;PreCrash_Message;Seatbelt_Lock;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">16</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl5" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl5</Property>
+      <Property Name="Size">37, 14</Property>
+      <Property Name="Location">562, 179</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.142858pt, style=Bold, Italic</Property>
+      <Property Name="Text">Brake</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl2" ControlName="Switch/Indicator 2">
+      <Property Name="Name">SwitchControl2</Property>
+      <Property Name="Size">58, 75</Property>
+      <Property Name="Location">556, 92</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="ImageFile">C:\Users\Public\Documents\Vector\CANoe\Sample Configurations 18.3.118\CAN\CANSystemDemo\Panels\Bitmaps\ControlBreak.bmp</Property>
+      <Property Name="SymbolConfiguration">5;1;PreCrash;;;Env_Brake;1;;;-1;;;</Property>
+      <Property Name="TabIndex">14</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl4" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl4</Property>
+      <Property Name="Size">87, 14</Property>
+      <Property Name="Location">430, 184</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.142858pt, style=Bold, Italic</Property>
+      <Property Name="Text">Seatbelt Status</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl2" Children="Controls" ControlName=" ">
+      <Property Name="Name">TrackBarControl2</Property>
+      <Property Name="Size">57, 105</Property>
+      <Property Name="Location">463, 69</Property>
+      <Property Name="Maximum">1</Property>
+      <Property Name="DisplayMinMax">True</Property>
+      <Property Name="Orientation">Vertical</Property>
+      <Property Name="LargeChange">1</Property>
+      <Property Name="LargeChangeDouble">1</Property>
+      <Property Name="MaximumDouble">1</Property>
+      <Property Name="DisplayValue">True</Property>
+      <Property Name="SymbolConfiguration">5;1;PreCrash;;;Env_Seatbelt;1;;;-1;;;</Property>
+      <Property Name="TabIndex">8</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl3</Property>
+      <Property Name="Size">109, 14</Property>
+      <Property Name="Location">219, 287</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.142858pt, style=Bold, Italic</Property>
+      <Property Name="Text">Acceleration Status</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="TrackBarControl1" Children="Controls" ControlName="Track Bar">
+      <Property Name="Name">TrackBarControl1</Property>
+      <Property Name="Size">136, 47</Property>
+      <Property Name="Location">206, 253</Property>
+      <Property Name="Maximum">180</Property>
+      <Property Name="MaximumDouble">180</Property>
+      <Property Name="SymbolConfiguration">5;1;PreCrash;;;Env_Acc;1;;;-1;;;</Property>
+      <Property Name="TabIndex">6</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ProgressBarControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="ProgressBarControl1" Children="Controls" ControlName="Progress Bar">
+      <Property Name="Name">ProgressBarControl1</Property>
+      <Property Name="Size">135, 28</Property>
+      <Property Name="Location">206, 204</Property>
+      <Property Name="OriginValue">0</Property>
+      <Property Name="Maximum">180</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="ValueSize">21, 15</Property>
+      <Property Name="SymbolConfiguration">5;2;PreCrash;BCM;Acceleration_Message;Acceleration_Signal;1;CAN;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.AnalogGaugeControl, Vector.CANalyzer.Panels.AnalogGauge, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="AnalogGaugeControl1" ControlName="Analog Gauge">
+      <Property Name="Name">AnalogGaugeControl1</Property>
+      <Property Name="Size">225, 166</Property>
+      <Property Name="Location">161, 41</Property>
+      <Property Name="BackgroundColor">White</Property>
+      <Property Name="IsMargin">False</Property>
+      <Property Name="CriticalProps" Member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAXVZlY3Rvci5DQU5hbHl6ZXIuUGFuZWxzLkFuYWxvZ0dhdWdlLCBWZXJzaW9uPTEwLjAuMTI3LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAYEAAAANlZlY3Rvci5DQU5hbHl6ZXIuUGFuZWxzLkRlc2lnbi5HYXVnZUNyaXRpY2FsUHJvcGVydGllcwYFAAAAMlZvaWQgLmN0b3IoRG91YmxlLCBEb3VibGUsIERvdWJsZSwgRG91YmxlLCBEb3VibGUpBgYAAABQLmN0b3IoU3lzdGVtLkRvdWJsZSwgU3lzdGVtLkRvdWJsZSwgU3lzdGVtLkRvdWJsZSwgU3lzdGVtLkRvdWJsZSwgU3lzdGVtLkRvdWJsZSkBAAAACgs=">
+        <Argument>0</Argument>
+        <Argument>180</Argument>
+        <Argument>0</Argument>
+        <Argument>30</Argument>
+        <Argument>120</Argument>
+      </Property>
+      <Property Name="GaugeFont">Microsoft Sans Serif, 8.142858pt</Property>
+      <Property Name="LegendText">Kmph</Property>
+      <Property Name="IsFrame">False</Property>
+      <Property Name="SymbolConfiguration">5;2;PreCrash;BCM;Acceleration_Message;Acceleration_Signal;1;CAN;;-1;;;</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl2</Property>
+      <Property Name="Size">80, 14</Property>
+      <Property Name="Location">21, 212</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.142858pt, style=Bold, Italic</Property>
+      <Property Name="Text">Engine Status</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+      <Property Name="Name">StaticTextControl1</Property>
+      <Property Name="Size">43, 14</Property>
+      <Property Name="Location">41, 136</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.142858pt, style=Bold, Italic</Property>
+      <Property Name="Text">Engine</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LEDControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="LEDControl1" ControlName="LED Control">
+      <Property Name="Name">LEDControl1</Property>
+      <Property Name="Size">24, 24</Property>
+      <Property Name="Location">49, 186</Property>
+      <Property Name="UsedLEDColorOff">Gray</Property>
+      <Property Name="SymbolConfiguration">5;2;PreCrash;BCM;Engine_Message;Engine_Signal;1;CAN;;-1;;;</Property>
+      <Property Name="TabIndex">1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=10.0.127.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl1" ControlName="Switch/Indicator">
+      <Property Name="Name">SwitchControl1</Property>
+      <Property Name="Size">30, 39</Property>
+      <Property Name="Location">49, 92</Property>
+      <Property Name="StateCnt">2</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="ImageFile">C:\Users\Public\Documents\Vector\CANoe\Sample Configurations 18.3.118\CAN\CANSystemDemo\Panels\Bitmaps\ConsoleRadioOnOff.bmp</Property>
+      <Property Name="SymbolConfiguration">5;1;PreCrash;;;Env_Engine;1;;;-1;;;</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">1293, 703</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>
